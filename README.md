@@ -192,6 +192,65 @@ input:focus, select:focus, textarea:focus {
     line-height: 1.5;
 }
 
+.steps {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    gap: 18px;
+}
+
+.step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: #191323;
+    border: 1px solid #35224e;
+    padding: 22px;
+    border-radius: 14px;
+}
+
+.step-number {
+    min-width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #914cff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.step h3 {
+    color: #c59aff;
+    margin-bottom: 8px;
+}
+
+.step p {
+    color: #c7bfd5;
+    line-height: 1.6;
+}
+
+.price-box {
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #493361;
+    border-radius: 12px;
+    background: #0e0a16;
+}
+
+.price-box h3 {
+    color: #c59aff;
+    margin-bottom: 12px;
+}
+
+.total-price {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
 .discord-section {
     text-align: center;
     background: #151020;
@@ -225,6 +284,10 @@ footer {
         margin: 8px;
         display: inline-block;
     }
+
+    .step {
+        padding: 18px;
+    }
 }
 </style>
 </head>
@@ -237,18 +300,21 @@ footer {
     <nav>
         <a href="#portfolio">Portfolio</a>
         <a href="#cennik">Cennik</a>
+        <a href="#jak-dziala">Jak zamówić?</a>
         <a href="#zamow">Zamów</a>
         <a href="#discord">Discord</a>
     </nav>
 </header>
 
 <div class="hero">
-    <h1>Twoja wizja.<br>
-    <span>Animacja Minecraft.</span></h1>
+    <h1>
+        Twoja wizja.<br>
+        <span>Animacja Minecraft.</span>
+    </h1>
 
     <p>
         Tworzę animacje Minecraft do YouTube,
-        intro oraz cinematiców.
+        intro, cinematiców i Shorts.
     </p>
 
     <a href="#zamow" class="button">
@@ -264,6 +330,8 @@ footer {
         Dołącz do Discorda
     </a>
 </div>
+
+<!-- PORTFOLIO -->
 
 <section id="portfolio">
     <h2 class="section-title">Moje portfolio</h2>
@@ -295,6 +363,8 @@ footer {
     </div>
 </section>
 
+<!-- CENNIK -->
+
 <section id="cennik">
     <h2 class="section-title">Cennik</h2>
 
@@ -317,14 +387,121 @@ footer {
             <h3>Premium</h3>
             <p>Zaawansowany cinematic.</p>
             <div class="price">50 zł+</div>
-            <p>Indywidualna scena i montaż.</p>
+            <p>Indywidualna scena i zaawansowane efekty.</p>
+        </div>
+    </div>
+
+    <h2 class="section-title" style="margin-top:50px">
+        Opcjonalne dodatki
+    </h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Montaż podstawowy</h3>
+            <p>
+                Przycinanie, łączenie scen,
+                przejścia i podstawowa korekcja.
+            </p>
+            <div class="price">+5 zł</div>
+        </div>
+
+        <div class="card">
+            <h3>Montaż premium</h3>
+            <p>
+                Efekty, napisy, muzyka,
+                dźwięki i dynamiczny montaż.
+            </p>
+            <div class="price">+15 zł</div>
+        </div>
+
+        <div class="card">
+            <h3>Format YouTube Shorts</h3>
+            <p>
+                Pionowy format 9:16,
+                przygotowany do Shorts.
+            </p>
+            <div class="price">+2–5 zł</div>
         </div>
     </div>
 
     <p class="note" style="text-align:center">
-        Ceny są przykładowe. Możesz je zmienić.
+        Cena końcowa zależy od długości i trudności animacji.
+        Dokładna wycena zostanie potwierdzona przed rozpoczęciem pracy.
     </p>
 </section>
+
+<!-- JAK DZIAŁA ZAMÓWIENIE -->
+
+<section id="jak-dziala">
+    <h2 class="section-title">Jak działa zamówienie?</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <div class="step-number">1</div>
+            <div>
+                <h3>Wysyłasz zamówienie</h3>
+                <p>
+                    Wypełnij formularz, wybierz rodzaj animacji,
+                    długość i opcjonalne dodatki.
+                    Opisz dokładnie swoją wizję.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <div>
+                <h3>Ustalamy szczegóły</h3>
+                <p>
+                    Kontaktuję się z Tobą przez Discord.
+                    Potwierdzamy cenę, termin i szczegóły
+                    animacji przed rozpoczęciem pracy.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <div>
+                <h3>Tworzę animację</h3>
+                <p>
+                    Przygotowuję scenę, postacie,
+                    ruchy kamery i efekty.
+                    Jeśli wybierzesz montaż, przygotuję
+                    również gotowy film.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">4</div>
+            <div>
+                <h3>Otrzymujesz podgląd</h3>
+                <p>
+                    Wysyłam podgląd animacji.
+                    Możesz zgłosić poprawki zgodnie
+                    z ustaleniami zamówienia.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">5</div>
+            <div>
+                <h3>Odbierasz gotowy film</h3>
+                <p>
+                    Po potwierdzeniu płatności
+                    otrzymujesz gotową animację
+                    w ustalonym formacie.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FORMULARZ ZAMÓWIENIA -->
 
 <section id="zamow">
     <h2 class="section-title">Zamów animację</h2>
@@ -336,7 +513,7 @@ footer {
 
             <input type="hidden"
                    name="_subject"
-                   value="Nowe zamówienie Minecraft Animation">
+                   value="Nowe zamówienie Galaxy Animations">
 
             <input type="hidden"
                    name="_captcha"
@@ -346,14 +523,14 @@ footer {
                    name="_template"
                    value="table">
 
-            <!-- EMAIL OPCJONALNY -->
+            <!-- EMAIL -->
 
             <label>Email (opcjonalny)</label>
             <input type="email"
                    name="Email klienta"
                    placeholder="Twój email">
 
-            <!-- NICKI MINECRAFT OPCJONALNE -->
+            <!-- NICKI -->
 
             <label>Twój nick Minecraft (opcjonalny)</label>
             <input type="text"
@@ -366,9 +543,8 @@ footer {
                    placeholder="Nick drugiej postaci">
 
             <p class="note">
-                Nick Minecraft jest opcjonalny, ale zalecany!
-                Dzięki niemu możemy użyć Twojego skina
-                i uzyskać lepszy efekt animacji.
+                Nick Minecraft jest opcjonalny, ale zalecany.
+                Dzięki niemu możemy użyć Twojego skina.
             </p>
 
             <!-- RODZAJ ANIMACJI -->
@@ -379,20 +555,62 @@ footer {
                 <option>Cinematic</option>
                 <option>Intro YouTube</option>
                 <option>PvP Animation</option>
+                <option>Animacja postaci</option>
                 <option>Inna animacja</option>
             </select>
 
-            <!-- DŁUGOŚĆ ANIMACJI -->
+            <!-- PAKIET -->
+
+            <label>Pakiet animacji</label>
+            <select name="Pakiet animacji" id="pakiet" required>
+                <option value="">Wybierz pakiet</option>
+                <option value="10">Basic — 10 zł</option>
+                <option value="25">Standard — 25 zł</option>
+                <option value="50">Premium — 50 zł</option>
+            </select>
+
+            <!-- DŁUGOŚĆ -->
 
             <label>Długość animacji</label>
             <select name="Długość animacji">
                 <option>Do 15 sekund</option>
-                <option>15-30 sekund</option>
-                <option>30-60 sekund</option>
+                <option>15–30 sekund</option>
+                <option>30–60 sekund</option>
                 <option>Powyżej 60 sekund</option>
             </select>
 
-            <!-- LINK DO SKINA -->
+            <!-- MONTAŻ -->
+
+            <label>Opcjonalny montaż</label>
+            <select name="Montaż" id="montaz">
+                <option value="0">Bez montażu — 0 zł</option>
+                <option value="5">Montaż podstawowy — +5 zł</option>
+                <option value="15">Montaż premium — +15 zł</option>
+            </select>
+
+            <p class="note">
+                Montaż obejmuje między innymi przejścia,
+                przycinanie scen, napisy i efekty
+                w zależności od wybranego pakietu.
+            </p>
+
+            <!-- FORMAT SHORTS -->
+
+            <label>Format YouTube Shorts</label>
+            <select name="Format YouTube Shorts" id="shorts">
+                <option value="0">Nie — standardowy format</option>
+                <option value="2">Tak — +2 zł</option>
+                <option value="3">Tak — +3 zł</option>
+                <option value="4">Tak — +4 zł</option>
+                <option value="5">Tak — +5 zł</option>
+            </select>
+
+            <p class="note">
+                YouTube Shorts: pionowy format 9:16.
+                Cena dodatku wynosi od 2 do 5 zł.
+            </p>
+
+            <!-- SKIN -->
 
             <label>Link do skina (opcjonalny)</label>
             <input type="url"
@@ -403,7 +621,7 @@ footer {
 
             <label>Opis zamówienia</label>
             <textarea name="Opis zamówienia"
-                      placeholder="Opisz, jak ma wyglądać animacja..."
+                      placeholder="Opisz, jak ma wyglądać animacja, jakie sceny, postacie i efekty chcesz..."
                       required></textarea>
 
             <!-- DISCORD -->
@@ -414,18 +632,40 @@ footer {
                    placeholder="Twój nick Discord"
                    required>
 
+            <!-- CENA -->
+
+            <div class="price-box">
+                <h3>Szacowana cena</h3>
+
+                <p class="note">
+                    Cena dodatków zostanie doliczona do
+                    wybranego pakietu.
+                </p>
+
+                <div class="total-price" id="cena">
+                    Wybierz pakiet
+                </div>
+
+                <input type="hidden"
+                       name="Szacowana cena"
+                       id="cena-formularza">
+            </div>
+
             <button class="button" type="submit">
                 Wyślij zamówienie
             </button>
 
             <p class="note">
-                Po wysłaniu zamówienia skontaktuję się
-                z Tobą przez Discord.
+                Wysłanie formularza nie oznacza jeszcze
+                rozpoczęcia realizacji. Najpierw potwierdzimy
+                szczegóły, cenę i termin przez Discord.
             </p>
 
         </form>
     </div>
 </section>
+
+<!-- DISCORD -->
 
 <section id="discord" class="discord-section">
     <h2 class="section-title">Dołącz do Discorda</h2>
@@ -453,6 +693,38 @@ footer {
     <p>Minecraft Animation Studio</p>
     <p>Discord: okusgamerek_13527</p>
 </footer>
+
+<!-- AUTOMATYCZNE OBLICZANIE CENY -->
+
+<script>
+const pakiet = document.getElementById("pakiet");
+const montaz = document.getElementById("montaz");
+const shorts = document.getElementById("shorts");
+
+const cena = document.getElementById("cena");
+const cenaFormularza = document.getElementById("cena-formularza");
+
+function obliczCene() {
+    const cenaPakietu = Number(pakiet.value);
+    const cenaMontazu = Number(montaz.value);
+    const cenaShorts = Number(shorts.value);
+
+    if (!pakiet.value) {
+        cena.textContent = "Wybierz pakiet";
+        cenaFormularza.value = "";
+        return;
+    }
+
+    const suma = cenaPakietu + cenaMontazu + cenaShorts;
+
+    cena.textContent = suma + " zł";
+    cenaFormularza.value = suma + " zł";
+}
+
+pakiet.addEventListener("change", obliczCene);
+montaz.addEventListener("change", obliczCene);
+shorts.addEventListener("change", obliczCene);
+</script>
 
 </body>
 </html>
