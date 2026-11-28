@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Galaxy Animations</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b16;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 45px 20px;
+      background: linear-gradient(135deg, #6a00ff, #16002e);
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      max-width: 550px;
+      margin: 30px auto;
+      padding: 25px;
+      background: #171725;
+      border-radius: 15px;
+      box-sizing: border-box;
+      width: 90%;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 13px;
+      margin: 10px 0;
+      border: 1px solid #444;
+      border-radius: 8px;
+      background: #0b0b16;
+      color: white;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 15px;
+      color: #ddd;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      background: #7b2cff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #9b5aff;
+    }
+
+    .info {
+      color: #b98cff;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    footer {
+      padding: 25px;
+      color: #aaa;
+    }
+
+    a {
+      color: #b98cff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Galaxy Animations</h1>
+    <p>Profesjonalne animacje Minecraft</p>
+  </header>
+
+  <div class="container">
+    <h2>Zamów animację</h2>
+
+    <p>
+      Zamów własną animację Minecraft!
+      Możesz podać nick, abyśmy mogli użyć Twojego skina.
+    </p>
+
+    <form action="https://formsubmit.co/okusgg0276@gmail.com"
+          method="POST">
+
+      <input type="hidden" name="_subject"
+             value="Nowe zamówienie Galaxy Animations!">
+
+      <input type="hidden" name="_captcha"
+             value="false">
+
+      <label>Email (opcjonalny)</label>
+      <input type="email"
+             name="Email klienta"
+             placeholder="np. example@gmail.com">
+
+      <label>Nick Minecraft 1 (opcjonalny)</label>
+      <input type="text"
+             name="Nick Minecraft 1"
+             placeholder="Podaj nick, aby użyć swojego skina">
+
+      <label>Nick Minecraft 2 (opcjonalny)</label>
+      <input type="text"
+             name="Nick Minecraft 2"
+             placeholder="Drugi nick, jeśli animacja ma 2 graczy">
+
+      <p class="info">
+        Podanie nicku Minecraft jest opcjonalne,
+        ale zalecane! Dzięki temu możemy użyć Twojego
+        skina i uzyskać lepszy efekt animacji.
+      </p>
+
+      <label>Rodzaj animacji</label>
+      <select name="Rodzaj animacji" required>
+        <option value="">Wybierz animację</option>
+        <option>Animacja PvP</option>
+        <option>Animacja cinematic</option>
+        <option>Animacja z walką</option>
+        <option>Animacja z intro</option>
+        <option>Inna</option>
+      </select>
+
+      <label>Opis zamówienia</label>
+      <textarea name="Opis zamówienia"
+                rows="5"
+                placeholder="Opisz, jak ma wyglądać animacja..."
+                required></textarea>
+
+      <button type="submit">
+        Wyślij zamówienie
+      </button>
+
+    </form>
+  </div>
+
+  <footer>
+    <p>
+      Kontakt: Discord —
+      <a href="https://discord.gg/bgysAHRcB">
+        Dołącz do Discorda
+      </a>
+    </p>
+
+    <p>Galaxy Animations © 2026</p>
+  </footer>
+
+</body>
+</html>
